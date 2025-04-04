@@ -5,11 +5,36 @@
     </head>
     <body>
         <h1>Form Elements</h1>
-        <form>
-            <label>Username:</label>
-            <input>
-
-
+        <form action="" method=""><!--action=where to send our form data and method=(POST/GET)how to send the data-->
+            <label for="username">Username: </label> <!--for: Associates a label with an input element by referencing the input's id attribute-->
+            <input type="text" size="10px" maxlength="20" id="username" name="username" placeholder="Enter username" required><!--disabled: your input is disabled and readonly: only readable but not editable-->
+            <br><hr>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><hr>
+            <label>programming Language:</label><br>
+            <input type="checkbox" id="c" value="c" name="programming_language">
+            <label for="c">C</label>
+            <br>
+            <input type="checkbox" id="C++" value="c++" name="programming_language">
+            <label for="C++">C++</label>
+            <br><hr>
+            <label for="file">Upload File: </label>
+            <input type="file" id="file" name="file">
+            <br><hr> 
+            <label for="hidden">Hidden: </label>
+            <input type="hidden" id="hidden">
+            <br><hr>
+            <h2>Text Area</h2>
+            <label for="comment"><strong>Discuss</strong></label><br>
+            <textarea id="comment" rows="10" cols="60" name="comment" placeholder="Write a comment"></textarea>
+            <br><hr>
+            <label>Buttons</label><br><br>
+            <button type="reset">Reset</button><br><br>
+            <button type="submit">Submit</button>
         </form>
     </body>
 </html>
